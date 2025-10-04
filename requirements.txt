@@ -1,0 +1,5 @@
+ python-pptx 
+ streamlit
+ requests
+ google-generativeai
+ toml
