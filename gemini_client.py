@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 
-def generate_content(api_key, prompt_text, model_name="gemini-pro"):
+def generate_content(api_key, prompt_text, model_name="gemini-2.5-flash"):
     """Generic function to get a response from Google's Gemini API."""
     try:
         genai.configure(api_key=api_key)

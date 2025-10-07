@@ -11,7 +11,7 @@ try:
     secrets = toml.load(secrets_path)
     
     # Get the API key
-    API_KEY = secrets["GOOGLE_API_KEY"]
+    API_KEY = "GOOGLE_API_KEY"
     
 except FileNotFoundError:
     print("--- ERROR ---")
@@ -25,13 +25,13 @@ except KeyError:
     exit()
 
 # --- Main Test Logic ---
-print("✅ Secrets file loaded successfully.")
+print(" Secrets file loaded successfully.")
 print("Attempting to configure the Gemini API...")
 
 try:
     genai.configure(api_key=API_KEY)
 
-    model_name_to_test = "gemini-pro"
+    model_name_to_test = "gemini-2.5-flash"
     
     print(f"Configuration successful. Attempting to use model: '{model_name_to_test}'...")
     
