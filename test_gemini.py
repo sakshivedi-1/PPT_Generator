@@ -11,7 +11,7 @@ try:
     secrets = toml.load(secrets_path)
     
     # Get the API key
-    API_KEY = "GOOGLE_API_KEY"
+    API_KEY = "enter your google api key"
     
 except FileNotFoundError:
     print("--- ERROR ---")
